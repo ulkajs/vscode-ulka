@@ -1,0 +1,25 @@
+{
+    "name": "ulka-language-support",
+    "displayName": "Ulka Language Support",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ulka",
+            "aliases": ["ulka", "ulka"],
+            "extensions": [".ulka"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ulka",
+            "scopeName": "source.ulka",
+            "path": "./syntaxes/ulka.tmLanguage.json"
+        }]
+    }
+}
