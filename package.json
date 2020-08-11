@@ -6,9 +6,28 @@
   "engines": {
     "vscode": "^1.47.0"
   },
+  "publisher": "Roshan",
+  "activationEvents": [
+    "onLanguage:ulka"
+  ],
+  "author": {
+    "name": "Roshan Acharya",
+    "email": "acharyaroshan2357@gmail.com",
+    "url": "https://www.acharyaroshan.com.np"
+  },
+  "icon": "https://i.imgur.com/fITdUPa.png",
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulkajs/vscode-ulka-language-support.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ulkajs/vscode-ulka-language-support/issues"
+  },
+  "homepage": "https://github.com/ulkajs/vscode-ulka-language-support#readme",
+  "license": "MIT",
   "contributes": {
     "languages": [
       {
