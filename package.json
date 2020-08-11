@@ -2,14 +2,11 @@
   "name": "ulka-language-support",
   "displayName": "Ulka Language Support",
   "description": "Syntax highlight for .ulka files",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.47.0"
   },
   "publisher": "Roshan",
-  "activationEvents": [
-    "onLanguage:ulka"
-  ],
   "author": {
     "name": "Roshan Acharya",
     "email": "acharyaroshan2357@gmail.com"
