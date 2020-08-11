@@ -2,7 +2,7 @@
   "name": "ulka-language-support",
   "displayName": "Ulka Language Support",
   "description": "Syntax highlight for .ulka files",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.47.0"
   },
@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ulkajs/vscode-ulka-language-support.git"
+    "url": "https://github.com/ulkajs/vscode-ulka-language-support.git"
   },
   "bugs": {
     "url": "https://github.com/ulkajs/vscode-ulka-language-support/issues"
