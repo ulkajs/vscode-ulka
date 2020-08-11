@@ -1,7 +1,7 @@
 {
   "name": "ulka-language-support",
   "displayName": "Ulka Language Support",
-  "description": "",
+  "description": "Syntax highlight for .ulka files",
   "version": "0.0.2",
   "engines": {
     "vscode": "^1.47.0"
@@ -12,10 +12,9 @@
   ],
   "author": {
     "name": "Roshan Acharya",
-    "email": "acharyaroshan2357@gmail.com",
-    "url": "https://www.acharyaroshan.com.np"
+    "email": "acharyaroshan2357@gmail.com"
   },
-  "icon": "https://i.imgur.com/fITdUPa.png",
+  "icon": "images/icon.png",
   "categories": [
     "Programming Languages"
   ],
