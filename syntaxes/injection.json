@@ -1,0 +1,52 @@
+{
+  "scopeName": "js-html.injection",
+  "injectionSelector": "L:meta.embedded.block.javascript",
+  "patterns": [
+    {
+      "include": "#html-template"
+    }
+  ],
+  "repository": {
+    "html-template": {
+      "begin": "(/\\* *HTML *\\*/) *(`)",
+      "end": "`",
+      "beginCaptures": {
+        "1": {
+          "name": "comment.block.js"
+        },
+        "2": {
+          "name": "punctuation.definition.string.template.begin.js"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.template.end.js"
+        }
+      },
+      "patterns": [
+        {
+          "begin": "\\${",
+          "end": "}",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.template-expression.begin.js"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.template-expression.end.js"
+            }
+          },
+          "patterns": [
+            {
+              "include": "source.js"
+            }
+          ]
+        },
+        {
+          "include": "text.html.basic"
+        }
+      ]
+    }
+  }
+}

@@ -1,8 +1,9 @@
-# Change Log
+## v1.0.0
 
-All notable changes to the "ulka-language-support" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Highlight comment.
+- Changed ulka syntax from `{%%}` to `{{}}`.
+- Highlight html block inside js.
+- Highlight escaped slash.
 
 ## [Unreleased]
 

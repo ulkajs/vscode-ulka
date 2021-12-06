@@ -6,14 +6,52 @@
       "include": "text.html.basic"
     },
     {
-      "include": "#javascript"
+      "include": "#ulka-ignore-block"
+    },
+    {
+      "include": "#js-inline-comment"
+    },
+    {
+      "include": "#ulka-block"
     }
   ],
   "repository": {
-    "javascript": {
-      "begin": "{%",
-      "end": "%}",
-      "contentName": "meta.embeded.block.javascript",
+    "ulka-ignore-block": {
+      "begin": "(?<!\\\\)\\\\{{",
+      "end": "}}",
+      "name": "comment.block.ulka"
+    },
+    "js-inline-comment": {
+      "match": "({{) *(// *.*) *(}})",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.tag.begin.html"
+        },
+        "2": {
+          "name": "comment.block.js"
+        },
+        "3": {
+          "name": "punctuation.definition.tag.end.html"
+        }
+      }
+    },
+    "ulka-block": {
+      "begin": "(\\\\\\\\)?({{)",
+      "end": "}}",
+      "beginCaptures": {
+        "1": {
+          "name": "constant.character.escape.ulka"
+        },
+        "2": {
+          "name": "punctuation.definition.tag.begin.html"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.tag.end.html"
+        }
+      },
+      "contentName": "meta.embedded.block.javascript",
       "patterns": [
         {
           "include": "source.js"

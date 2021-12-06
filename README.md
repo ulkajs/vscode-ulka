@@ -1,9 +1,19 @@
-# ULKA LANGUAGE SUPPORT
+<p align="center">
+    <img src="./images/logo.png"/>
+</p>
 
-Language Support For Ulka Files
+<h2 align="center">Ulka Language Support</h2>
 
-![Ulka](https://i.imgur.com/coa1q5T.png)
+<p align="center">Syntax highlight for <code>.ulka</code> files.</p>
+
+<hr />
 
 ## Features
 
-Syntax highlight
+- Highlight html in `.ulka` files.
+- Highlight js inside ulka block.
+- Highlight html inside template literals.
+
+## Screenshot
+
+![screenshot](./images/ulka-screenshot.png)

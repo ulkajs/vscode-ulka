@@ -2,7 +2,7 @@
   "name": "ulka-language-support",
   "displayName": "Ulka Language Support",
   "description": "Syntax highlight for .ulka files",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.47.0"
   },
@@ -11,7 +11,7 @@
     "name": "Roshan Acharya",
     "email": "acharyaroshan2357@gmail.com"
   },
-  "icon": "images/icon.png",
+  "icon": "images/logo.png",
   "categories": [
     "Programming Languages"
   ],
@@ -24,6 +24,14 @@
   },
   "homepage": "https://github.com/ulkajs/vscode-ulka-language-support#readme",
   "license": "MIT",
+  "configurationDefaults": {
+    "emmet.includeLanguages": {
+      "ulka": "html"
+    },
+    "material-icon-theme.files.associations": {
+      "*.ulka": "html"
+    }
+  },
   "contributes": {
     "languages": [
       {
@@ -44,8 +52,15 @@
         "scopeName": "source.ulka",
         "path": "./syntaxes/ulka.tmLanguage.json",
         "embeddedLanguages": {
-          "meta.embeded.block.javascript": "javascript"
+          "meta.embedded.block.javascript": "javascript"
         }
+      },
+      {
+        "path": "./syntaxes/injection.json",
+        "scopeName": "js-html.injection",
+        "injectTo": [
+          "source.ulka"
+        ]
       }
     ]
   }
