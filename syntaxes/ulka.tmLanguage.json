@@ -17,9 +17,26 @@
   ],
   "repository": {
     "ulka-ignore-block": {
-      "begin": "(?<!\\\\)\\\\{{",
+      "begin": "(?<!\\\\)(\\\\)({{)",
       "end": "}}",
-      "name": "comment.block.ulka"
+      "beginCaptures": {
+        "1": {
+          "name": "constant.character.escape.ulka"
+        },
+        "2": {
+          "name": "text.html.basic"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "text.html.basic"
+        }
+      },
+      "patterns": [
+        {
+          "include": "text.html.basic"
+        }
+      ]
     },
     "js-inline-comment": {
       "match": "({{) *(// *.*) *(}})",
