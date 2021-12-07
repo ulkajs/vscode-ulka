@@ -6,8 +6,6 @@
 
 <p align="center">Syntax highlight for <code>.ulka</code> files.</p>
 
-<hr />
-
 ## Features
 
 - Highlight html in `.ulka` files.
