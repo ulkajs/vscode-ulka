@@ -6,6 +6,9 @@
       "include": "text.html.basic"
     },
     {
+      "include": "#frontmatter"
+    },
+    {
       "include": "#ulka-ignore-block"
     },
     {
@@ -22,6 +25,26 @@
     }
   ],
   "repository": {
+    "frontmatter": {
+      "contentName": "source.yaml",
+      "begin": "---(?=\\s*\\n)",
+      "end": "---(?=\\s*\\n)",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.tag.begin.html"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.tag.end.html"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.yaml"
+        }
+      ]
+    },
     "ulka-ignore-block": {
       "begin": "(?<!\\\\)(\\\\)({{)",
       "end": "}}",

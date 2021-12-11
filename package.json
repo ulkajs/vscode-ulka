@@ -1,8 +1,8 @@
 {
   "name": "ulka-language-support",
-  "displayName": "Ulka Language Support",
-  "description": "Syntax highlight for .ulka files",
-  "version": "1.0.0",
+  "displayName": "Ulka",
+  "description": "Syntax highlighter and Formatter for .ulka files",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.47.0"
   },
@@ -11,28 +11,41 @@
     "name": "Roshan Acharya",
     "email": "acharyaroshan2357@gmail.com"
   },
+  "main": "./out/extension.js",
   "icon": "images/logo.png",
   "categories": [
     "Programming Languages"
   ],
+  "activationEvents": [
+    "onLanguage:ulka"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ulkajs/vscode-ulka-language-support.git"
+    "url": "https://github.com/ulkajs/vscode-ulka.git"
   },
   "bugs": {
-    "url": "https://github.com/ulkajs/vscode-ulka-language-support/issues"
+    "url": "https://github.com/ulkajs/vscode-ulka/issues"
   },
-  "homepage": "https://github.com/ulkajs/vscode-ulka-language-support#readme",
+  "homepage": "https://github.com/ulkajs/vscode-ulka#readme",
   "license": "MIT",
-  "configurationDefaults": {
-    "emmet.includeLanguages": {
-      "ulka": "html"
-    },
-    "material-icon-theme.files.associations": {
-      "*.ulka": "html"
-    }
-  },
   "contributes": {
+    "configurationDefaults": {
+      "emmet.includeLanguages": {
+        "ulka": "html"
+      },
+      "material-icon-theme.files.associations": {
+        "*.ulka": "html"
+      },
+      "vsicons.associations.files": [
+        {
+          "icon": "html",
+          "extensions": [
+            "ulka"
+          ],
+          "format": "svg"
+        }
+      ]
+    },
     "languages": [
       {
         "id": "ulka",
@@ -63,5 +76,15 @@
         ]
       }
     ]
+  },
+  "dependencies": {
+    "@ulkajs/format": "^0.0.2",
+    "prettier": "^2.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.12",
+    "@types/prettier": "^2.4.2",
+    "typescript": "^4.5.3",
+    "vscode": "^1.1.37"
   }
 }

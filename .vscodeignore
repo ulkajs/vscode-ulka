@@ -1,4 +1,9 @@
-.vscode/**
-.vscode-test/**
+.vscode/
+src/
 .gitignore
-vsc-extension-quickstart.md
+CHANGELOG.md
+tsconfig.json
+yarn.lock
+node_modules
+!node_modules/prettier
+!node_modules/@ulkajs/format

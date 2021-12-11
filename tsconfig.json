@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "out",
+    "strict": true,
+    "noUnusedLocals": true,
+    "removeComments": true,
+    "lib": ["es2016"],
+    "sourceMap": true,
+    "rootDir": "src",
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", ".vscode-test", "test-fixtures"],
+  "include": ["src/**/*.ts"]
+}
