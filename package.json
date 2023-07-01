@@ -2,7 +2,7 @@
   "name": "ulka-language-support",
   "displayName": "Ulka",
   "description": "Syntax highlighter and Formatter for .ulka files",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "engines": {
     "vscode": "^1.47.0"
   },
