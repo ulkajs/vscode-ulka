@@ -78,13 +78,13 @@
     ]
   },
   "dependencies": {
-    "@ulkajs/format": "^0.0.2",
-    "prettier": "^2.5.1"
+    "@ulkajs/format": "^0.0.4",
+    "prettier": "^2.8.8"
   },
   "devDependencies": {
     "@types/node": "^16.11.12",
     "@types/prettier": "^2.4.2",
-    "typescript": "^4.5.3",
+    "typescript": "^5.1.6",
     "vscode": "^1.1.37"
   }
 }
